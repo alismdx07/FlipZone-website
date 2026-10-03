@@ -1,0 +1,27 @@
+header{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+}
+nav{
+    display: flex;
+    gap: 30px;
+    
+}
+.main-container{
+    width: 100vw;
+    background-color: white;
+    padding: 20px;
+}
+header h2{
+    color:blueviolet;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding:20px ;
+}
