@@ -5,6 +5,7 @@ import Home from './components/Home'
 import Cart from './components/Cart'
 import Wishlist from './components/Wishlist'
 import Products from './components/Products'
+import ProtectedRoute from './components/ProtectedRoute'
 
 const App=()=>{
   return(
@@ -14,9 +15,9 @@ const App=()=>{
     <Routes>
       <Route path="/login" element={<Loginpage />} />
 <Route path='/home' element={<Home/>}/>
-<Route path='/cart' element={<Cart/>}/>
-<Route path='/wishlist' element={<Wishlist/>}/>
-<Route path='/products' element={<Products/>}/>
+<Route path='/cart' element={<ProtectedRoute><Cart/> </ProtectedRoute>}/>
+<Route path='/wishlist' element={<ProtectedRoute><Wishlist/> </ProtectedRoute>}/>
+<Route path='/products' element={<ProtectedRoute><Products/> </ProtectedRoute>}/>
     </Routes>
      </BrowserRouter>
     </div>
